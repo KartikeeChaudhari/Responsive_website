@@ -11,30 +11,26 @@ const Header = () => {
             <li><a href='#'>Home</a></li>
             <li><a href='#'>About Us</a></li>
             <li><a href='#'>Contact</a></li>
+            <li className='toggle_button'>
+            <button>toggle</button>
+            
+            </li>
         </ul>
-        <div className='toggle_button'>
-        toggle
-        </div>
+        
 
         </nav>
         <div className='search'>
-            <input type='text'></input>
+            <input type='text' placeholder='Search here...'></input>
         </div>
         <div className='main_content'>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis nam corrupti sint sit voluptas, quam minima vero hic, voluptatum accusamus natus cumque. Omnis, fugit. Sed in odio consequuntur porro possimus!</p>
         </div>
-        <div className='circle'> circle1</div>
-        <div className='circle2'>Circle2</div>
-        <div className='half_circle_left'>hl</div>
-        <div className='half_circle_right'>hr</div>
-        
+        <div className='circle'></div>
+        <div className='circle2'></div>
+        <div className='half_circle_left'></div>
+       
         </div>
     </header>
-    <footer>
-        <p>facebook</p>
-        <p>yooutube</p>
-        <p>twitter</p>
-    </footer>
    </>
   )
 }

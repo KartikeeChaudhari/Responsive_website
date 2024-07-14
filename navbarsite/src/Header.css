@@ -8,3 +8,81 @@
 body{
     font-family:'Noto';
 }
+header{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+.container nav{
+    list-style: none;
+    text-decoration: none;
+    background-color: yellowgreen;
+    text-align: center;
+    
+}
+
+.container nav ul li{
+    display: inline-block;
+    margin:1.5rem 1rem 1rem 1rem;
+    transition: .9s ease;
+       
+}
+.container nav ul li a{
+    text-decoration: none;
+    
+}
+.container .toggle_button button{
+    
+    background-color: bisque;
+    display: none; 
+    
+}
+.search{
+    margin-top: 1rem;
+    text-align: center;
+}
+.search input{
+    height: 2rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+.search input::placeholder{
+    color: brown;
+    padding: 1rem;
+    margin: 1rem;
+}
+.circle{
+    background-color: yellow;
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 15rem;
+}
+.circle2{
+    background-color: yellow;
+    border-radius: 100%;
+    height: 7rem;
+    width: 7rem;
+    margin:5rem 0rem 0rem 60rem;
+   
+}
+.half_circle_left{
+    background-color: blueviolet;
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+    margin-top:3rem;
+    margin-left:0;
+    z-index: -1;
+
+}
+.main_content{
+   
+    height: 20vh;
+    width: 20vw;
+    margin:1rem auto auto auto;
+}
