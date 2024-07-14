@@ -1,5 +1,7 @@
 import React from 'react'
 import './Header.css';
+import { FaFacebook,FaYoutube,FaTwitter} from "react-icons/fa";
+
 
 const Header = () => {
   return (
@@ -27,10 +29,14 @@ const Header = () => {
         </div>
         <div className='circle'></div>
         <div className='circle2'></div>
-        <div className='half_circle_left'></div>
        
         </div>
     </header>
+    <footer>
+    <FaFacebook className='facebook' />
+    <FaYoutube className='youtube' />
+    <FaTwitter className='twitter' />
+    </footer>
    </>
   )
 }
