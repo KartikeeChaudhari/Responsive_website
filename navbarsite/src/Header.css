@@ -87,3 +87,38 @@ footer{
 .facebook,.youtube,.twitter{
     margin: 1rem;
 }
+
+@media  screen and (max-width:409px) {
+    
+    .container nav{
+        list-style: none;
+        text-decoration: none;
+        display: block;
+        height: 100vh;
+        background-color: yellowgreen;
+        text-align: center;
+        
+    }
+    
+    .container nav ul li{
+       
+        transition: .9s ease;
+           
+    }
+    .container nav ul li a{
+        text-decoration: none;
+         display: block;
+        
+    }
+    .container .toggle_button button{ 
+        font-size: 2rem;
+        display:block; 
+        text-align: center;
+        margin-right:5rem;
+        border: white;
+        color: rgb(114, 223, 223);
+    }
+    .search,.main_content,.circle,.circle2{
+        display: none;
+    }
+}

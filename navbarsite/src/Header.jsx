@@ -1,9 +1,12 @@
 import React from 'react'
 import './Header.css';
-import { FaFacebook,FaYoutube,FaTwitter} from "react-icons/fa";
+import { FaFacebook,FaYoutube,FaTwitter,FaBars} from "react-icons/fa";
 
 
 const Header = () => {
+    const handleButton=()=>{
+        alert('');
+    }
   return (
    <>
     <header>
@@ -14,7 +17,7 @@ const Header = () => {
             <li><a href='#'>About Us</a></li>
             <li><a href='#'>Contact</a></li>
             <li className='toggle_button'>
-            <button>toggle</button>
+            <button onClick={handleButton}><FaBars /></button>
             
             </li>
         </ul>
