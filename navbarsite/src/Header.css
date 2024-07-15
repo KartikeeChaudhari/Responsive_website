@@ -94,31 +94,84 @@ footer{
         list-style: none;
         text-decoration: none;
         display: block;
-        height: 100vh;
+        height: 10vh;
         background-color: yellowgreen;
         text-align: center;
         
     }
     
-    .container nav ul li{
-       
+    .container nav ul{
+       position: absolute;
         transition: .9s ease;
+        background-color: yellowgreen;
+        margin-top: 4rem;
+        height: 100vh;
+        width: 100%;
+        right:50rem;
            
     }
-    .container nav ul li a{
+    .container nav .nav_toggle{
+        right: 0;
+    }
+    .container nav ul li{
         text-decoration: none;
          display: block;
-        
     }
     .container .toggle_button button{ 
         font-size: 2rem;
         display:block; 
-        text-align: center;
-        margin-right:5rem;
+        position: absolute;
+        margin:1rem 0 0 2rem;
         border: white;
         color: rgb(114, 223, 223);
+        cursor: pointer;
     }
-    .search,.main_content,.circle,.circle2{
-        display: none;
+    .search{
+        margin-top: 1rem;
+        text-align: center;
     }
+    .search input{
+        height: 2rem;
+        width: 10rem;
+        border-radius: 0.5rem;
+        border: none;
+        outline: none;
+    }
+    .search input::placeholder{
+        color: brown;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .circle{
+        background-color: yellow;
+        border-radius: 100%;
+        height: 5rem;
+        width: 5rem;
+        margin-left: 4rem;
+    }
+    .circle2{
+        background-color: yellow;
+        border-radius: 100%;
+        height: 7rem;
+        width: 7rem;
+        margin:5rem 0rem 0rem 10rem;
+       
+    }
+    
+    .main_content{
+        /* height: 100vh; */
+        width: 100%;
+        margin:1rem auto auto auto;
+    }
+    footer{
+        color:azure;
+        background-color: rgb(32, 32, 32);
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .facebook,.youtube,.twitter{
+        margin: 1rem;
+    }
+    
 }

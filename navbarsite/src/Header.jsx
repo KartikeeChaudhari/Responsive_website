@@ -1,26 +1,30 @@
-import React from 'react'
+import React ,{useRef}from 'react'
 import './Header.css';
 import { FaFacebook,FaYoutube,FaTwitter,FaBars} from "react-icons/fa";
 
 
 const Header = () => {
+    const navClass=useRef();
     const handleButton=()=>{
-        alert('');
+       
+       navClass.current.classList.toggle('nav_toggle');
+       
     }
   return (
    <>
     <header>
         <div className='container'>
         <nav>
-        <ul>
+        <ul  ref={navClass}>
             <li><a href='#'>Home</a></li>
             <li><a href='#'>About Us</a></li>
             <li><a href='#'>Contact</a></li>
-            <li className='toggle_button'>
+           
+        </ul>
+        <div className='toggle_button'>
             <button onClick={handleButton}><FaBars /></button>
             
-            </li>
-        </ul>
+            </div>
         
 
         </nav>
